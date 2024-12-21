@@ -1,0 +1,194 @@
+body {
+  background-color: #272b30;
+  font-family: cursive;
+}
+
+/* Start Header */
+header img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+/* End Header */
+
+/* Start Nav */
+nav {
+  position: sticky;
+  background-color: rgb(58, 73, 123) !important;
+  margin-inline: auto;
+  margin-top: -30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+nav .logo {
+  width: 40px;
+}
+.logo-section a {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.navbar-nav li a {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 400;
+}
+.nav-link {
+  transition: all 0.3s ease-in-out;
+}
+.nav-link:hover {
+  color: rgb(0, 153, 204) !important;
+}
+.nav-link:focus,
+.nav-link:hover,
+.nav-link:active {
+  color: rgb(0, 153, 204) !important;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: rgb(255, 255, 255);
+}
+@media (min-width: 576px) {
+  nav {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  nav {
+    width: 75%;
+    margin: auto;
+    background-color: rgb(58, 73, 123) !important;
+    margin-inline: auto;
+    margin-top: -30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    position: sticky !important;
+  }
+
+  nav {
+    width: 75%;
+    margin: auto;
+    background-color: rgb(58, 73, 123) !important;
+    margin-inline: auto;
+    margin-top: -30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+}
+/* End Nav */
+/* Start Badges */
+.badge {
+  padding-block: 10px;
+  padding-inline: 8px;
+}
+.card {
+  border: 1px solid black;
+  --bs-card-bg: transparent;
+  position: relative;
+}
+
+.card-shadow:hover {
+  opacity: 0;
+}
+
+.card-footer .badge {
+  font-size: 12px;
+  background-color: #32383e !important;
+  padding-block: 5px;
+}
+.card {
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+}
+.card:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+.gamed-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+.Monetization {
+  font-size: 12px;
+  font-weight: 700;
+}
+.decoration-card {
+  font-size: 14px;
+  font-weight: 400;
+}
+.card-footer span.badge {
+  font-size: 11px;
+  font-weight: 700;
+}
+/* End Badges */
+/* Start Part 2 */
+.details .badge {
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #0dcaf0 !important;
+  padding-block: 5px;
+  color: black !important;
+}
+#pageDescription {
+  background-color: #272b30;
+  height: 100vh;
+  z-index: 99999999;
+}
+#pageDescription i {
+  cursor: pointer;
+  font-size: 21px;
+  color: #797979;
+}
+#pageDescription i:hover {
+  color: #acabab;
+}
+/* End Part 2 */
+.card {
+  cursor: pointer;
+}
+
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color:#de3500 #0000 #fff #0000;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: 1s rotate linear infinite;
+}
+.loader:before , .loader:after{
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  border: 10px solid transparent;
+  border-bottom-color:#fff;
+  transform: translate(-10px, 19px) rotate(-35deg);
+}
+.loader:after {
+  border-color: #de3500 #0000 #0000 #0000 ;
+  transform: translate(32px, 3px) rotate(-35deg);
+}
+ @keyframes rotate {
+  100%{    transform: rotate(360deg)}
+}
+
+.loading{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 0.3);
+  z-index: 1000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
